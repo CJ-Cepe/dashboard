@@ -47,14 +47,10 @@ body {
 
 /*  Navigation styling  */
 nav .profile-cont {
-    width: 100%;
-    height: 100%;
     background: rgb(46, 45, 45);
 }
 
 nav .icons-cont {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-self: end;
+    padding-right: 5%;
 }
