@@ -81,7 +81,17 @@ aside div:nth-child(9) {
 
 /* Article Styling */
 
+.right-article {
+    grid-column: 1 / 2;
+    height: 100%;
+    width: 100%;
+}
+
 .left-article {
+    grid-column: 2/ 3;
+    height: 100%;
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
