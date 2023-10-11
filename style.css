@@ -47,6 +47,9 @@ body {
     grid-column: 2/3;
     grid-row: 2/3;
     background: rgb(158, 158, 158);
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 /*  Navigation styling  */
@@ -74,4 +77,22 @@ aside div:nth-child(8) {
 aside div:nth-child(9) {
     background-color: aqua;
     grid-row: 10/11;
+}
+
+/* Article Styling */
+
+.left-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.left-article div:first-child {
+    background-color: aquamarine;
+    grid-row: 1 / 2;
+}
+
+.left-article div:last-child {
+    background-color: blueviolet;
+    grid-row: 2 / 3;
 }
