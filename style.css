@@ -16,11 +16,12 @@ html {
     --black2: #000;
     --white1: #fbfbfb;
     --white2: #fff;
+    --purple1: #6864fe;
 }
 
 .icons {
     height: auto;
-    width: 30px;
+    width: 25px;
 }
 
 /*--- main styling ---*/
@@ -61,6 +62,16 @@ body > main {
 }
 
 /*--- aside styling ---*/
+#dashboard-icon {
+    filter: invert(38%) sepia(21%) saturate(4155%) hue-rotate(220deg)
+        brightness(102%) contrast(99%);
+    transition: 0.3s ease-in-out;
+}
+
+#dashboard-icon:hover {
+    filter: invert(98%) sepia(81%) saturate(39%) hue-rotate(194deg)
+        brightness(111%) contrast(97%);
+}
 
 .menu-row {
     display: grid;
@@ -69,5 +80,7 @@ body > main {
 }
 
 .menu-row > img {
+    filter: invert(98%) sepia(81%) saturate(39%) hue-rotate(194deg)
+        brightness(111%) contrast(97%);
     justify-self: end;
 }
