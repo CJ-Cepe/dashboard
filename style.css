@@ -10,3 +10,37 @@
     margin: 0;
     outline: 1px red solid;
 }
+
+html {
+    --black1: #242424;
+    --black2: #000;
+    --white1: #fbfbfb;
+    --white2: #fff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black1);
+
+    display: grid;
+    grid-template-areas:
+        'a b'
+        'a c';
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+body > nav {
+    grid-area: b;
+    background-color: var(--white1);
+}
+
+body > aside {
+    grid-area: a;
+}
+
+body > main {
+    grid-area: c;
+    background-color: var(--white1);
+}
