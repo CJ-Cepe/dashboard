@@ -18,6 +18,12 @@ html {
     --white2: #fff;
 }
 
+.icons {
+    height: auto;
+    width: 30px;
+}
+
+/*--- main styling ---*/
 body {
     width: 100vw;
     height: 100vh;
@@ -38,9 +44,30 @@ body > nav {
 
 body > aside {
     grid-area: a;
+
+    display: grid;
+    grid-template-areas:
+        'a'
+        'b'
+        'c';
+    grid-template-rows: 1fr 5fr 1fr;
+
+    color: var(--white1);
 }
 
 body > main {
     grid-area: c;
     background-color: var(--white1);
+}
+
+/*--- aside styling ---*/
+
+.menu-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.menu-row > img {
+    justify-self: end;
 }
