@@ -8,7 +8,7 @@
 
 * {
     margin: 0;
-    outline: 1px red solid;
+    /*  outline: 1px red solid; */
 }
 
 html {
@@ -66,6 +66,9 @@ body > main {
     filter: invert(38%) sepia(21%) saturate(4155%) hue-rotate(220deg)
         brightness(102%) contrast(99%);
     transition: 0.3s ease-in-out;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 15%;
 }
 
 #dashboard-icon:hover {
@@ -77,6 +80,8 @@ body > main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    gap: 7%;
+    margin-bottom: 12%;
 }
 
 .menu-row > img {
