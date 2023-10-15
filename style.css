@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono&display=swap');
 
 /*--- CSS reset ---*/
 
@@ -72,16 +72,24 @@ body > main {
     align-items: center;
     margin-top: 8%;
     margin-bottom: 20%;
-    gap: 7%;
+    gap: 1%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .dashboard-icon-cont > img {
     filter: invert(38%) sepia(21%) saturate(4155%) hue-rotate(220deg)
         brightness(102%) contrast(99%);
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     width: 80%;
     height: auto;
     justify-self: end;
+}
+
+.dashboard-icon-cont > span:hover {
+    color: var(--purple1);
+    transition: 0.5s;
 }
 
 .dashboard-icon-cont > img:hover {
@@ -130,3 +138,5 @@ body > main {
 .menu-row:hover > div:nth-child(1) {
     display: block;
 }
+
+/*--- aside styling ---*/
