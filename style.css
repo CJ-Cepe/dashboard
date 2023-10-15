@@ -10,7 +10,7 @@
 
 * {
     margin: 0;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
 }
 
 html {
@@ -41,10 +41,12 @@ body > nav {
     grid-area: b;
     background-color: var(--white1);
 
-    margin: 2% 2% 2% 0;
+    margin: 1.5% 2% 0% 0;
     grid-template-areas: 'a b c d e f';
-    grid-template-columns: 1fr 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 5fr 0.5fr 0.5fr 0.5fr;
     grid-row: 1fr;
+    gap: 1%;
+    align-items: center;
 }
 
 body > aside {
@@ -63,7 +65,8 @@ body > aside {
 body > main {
     grid-area: c;
     background-color: var(--white1);
-    margin-right: 2%;
+
+    margin: 2% 2% 0 0;
 }
 
 .icons {
@@ -150,6 +153,16 @@ body > main {
 
 nav > img:first-child {
     grid-area: a;
+    align-self: center;
+    justify-self: end;
+    clip-path: circle();
+    width: 60%;
+
+    /*
+    border-radius: 50%;
+    width: 40%;
+    height: 70%;
+    object-fit: cover; */
 }
 
 nav > span:nth-child(2) {
@@ -158,12 +171,15 @@ nav > span:nth-child(2) {
 
 nav > img:nth-child(3) {
     grid-area: d;
+    justify-self: end;
 }
 
 nav > img:nth-child(4) {
     grid-area: e;
+    justify-self: center;
 }
 
 nav > img:nth-child(5) {
     grid-area: f;
+    justify-self: start;
 }
