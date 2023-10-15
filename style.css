@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /*--- CSS reset ---*/
 
 *,
@@ -8,7 +10,7 @@
 
 * {
     margin: 0;
-    outline: 1px red solid;
+    /*  outline: 1px red solid; */
 }
 
 html {
@@ -49,6 +51,7 @@ body > aside {
         'c';
     grid-template-rows: 1fr 5fr 1.5fr;
     color: var(--white1);
+    font-family: 'Inter', Helvetica, sans-serif, Arial;
 }
 
 body > main {
@@ -94,6 +97,7 @@ body > main {
     padding-top: 5%;
     padding-bottom: 5%;
     /*  margin-bottom: 12%; */
+    position: relative;
 }
 
 .menu-row > img {
@@ -112,4 +116,17 @@ body > main {
     filter: invert(38%) sepia(21%) saturate(4155%) hue-rotate(220deg)
         brightness(102%) contrast(99%);
     transition: 0.15s;
+}
+
+.menu-row > div:nth-child(1) {
+    background: var(--purple1);
+    width: 3%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    transition: 0.1s;
+}
+
+.menu-row:hover > div:nth-child(1) {
+    display: block;
 }
