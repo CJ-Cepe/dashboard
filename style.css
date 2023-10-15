@@ -20,6 +20,7 @@ html {
     --white1: #fbfbfb;
     --white2: #fff;
     --purple1: #6864fe;
+    --purple2: #4d46b2;
 }
 
 /*--- main styling ---*/
@@ -43,7 +44,7 @@ body > nav {
 
     margin: 1.5% 2% 0% 0;
     grid-template-areas: 'a b c d e f';
-    grid-template-columns: 0.5fr 1fr 5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr 4fr 0.5fr 0.5fr 0.5fr;
     grid-row: 1fr;
     gap: 1%;
     align-items: center;
@@ -167,6 +168,21 @@ nav > img:first-child {
 
 nav > span:nth-child(2) {
     grid-area: b;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--black1);
+}
+
+nav > span:nth-child(2) a {
+    font-family: 'Inter', Helvetica, sans-serif, Arial;
+    font-weight: 900;
+    font-size: large;
+    text-decoration: none;
+    color: var(--black1);
+}
+
+nav > span:nth-child(2) a span {
+    color: var(--purple2);
 }
 
 nav > img:nth-child(3) {
@@ -182,4 +198,13 @@ nav > img:nth-child(4) {
 nav > img:nth-child(5) {
     grid-area: f;
     justify-self: start;
+}
+
+nav > .icons:hover {
+    transition: 0.2s;
+}
+
+nav > .icons:hover {
+    filter: invert(27%) sepia(88%) saturate(868%) hue-rotate(216deg)
+        brightness(91%) contrast(98%);
 }
