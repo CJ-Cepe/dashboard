@@ -66,8 +66,10 @@ body > aside {
 body > main {
     grid-area: c;
     background-color: var(--white1);
-
     margin: 2% 2% 0 0;
+
+    display: grid;
+    grid-template-columns: 5fr 1.5fr;
 }
 
 .icons {
@@ -207,4 +209,14 @@ nav > .icons:hover {
 nav > .icons:hover {
     filter: invert(27%) sepia(88%) saturate(868%) hue-rotate(216deg)
         brightness(91%) contrast(98%);
+}
+
+/* main styling */
+
+main > div:first-child {
+    background: red;
+}
+
+main > div:last-child {
+    background: #4d46b2;
 }
