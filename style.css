@@ -217,6 +217,38 @@ main > div:first-child {
     background: red;
 }
 
-main > div:last-child {
+main > section:last-child {
     background: #4d46b2;
+}
+
+section {
+    display: grid;
+    grid-template-areas: 'a' 'b';
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding: 5%;
+    gap: 5%;
+}
+
+.section-cont {
+    border: 2px solid var(--black2);
+    display: grid;
+}
+
+.section-cont h2 {
+    justify-self: center;
+    font-size: 1.2rem;
+}
+
+section > .section-cont:first-child {
+    grid-area: a;
+    background-color: var(--white1);
+}
+
+section > .section-cont:last-child {
+    grid-area: b;
+    background-color: var(--white1);
+}
+
+.announcement-row {
 }
