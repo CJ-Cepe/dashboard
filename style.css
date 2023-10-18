@@ -10,7 +10,7 @@
 
 * {
     margin: 0;
-    /* outline: 1px red solid; */
+    outline: 1px red solid;
 }
 
 html {
@@ -61,12 +61,13 @@ body > aside {
     grid-template-rows: 1fr 5fr 1.5fr;
     color: var(--white1);
     font-family: 'Inter', Helvetica, sans-serif, Arial;
+    max-height: 100%;
 }
 
 body > main {
     grid-area: c;
     background-color: var(--white1);
-    margin: 2% 2% 0 0;
+    margin: 2% 2% -2% 0;
 
     display: grid;
     grid-template-columns: 5fr 1.5fr;
@@ -318,7 +319,7 @@ section > .section-cont:last-child {
 }
 
 .trending-row > img {
-    width: 2.2rem;
+    width: 2rem;
     height: auto;
     clip-path: circle();
     justify-self: end;
@@ -331,5 +332,33 @@ section > .section-cont:last-child {
     grid-template-rows: 0.2fr 1fr;
 }
 
-.card-cont {
+.cards-cont {
+    max-height: 60vh;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    gap: 2rem 3rem;
+
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.cards-cont::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.card {
+    font-size: 1rem;
+    border: 1px solid var(--black2);
+    background-color: var(--white2);
+    height: 18vw;
+    width: 25vw;
+    padding: 10%;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
