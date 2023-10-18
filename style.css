@@ -10,7 +10,7 @@
 
 * {
     margin: 0;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
 }
 
 html {
@@ -225,7 +225,7 @@ section {
     display: grid;
     grid-template-areas: 'a' 'b';
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 60% 40%;
     padding: 5%;
     gap: 3%;
     font-size: 0.7rem;
@@ -234,7 +234,6 @@ section {
 
 .section-cont {
     border: 2px solid var(--black2);
-    display: grid;
     padding: 1rem 1.5rem;
 }
 
@@ -242,6 +241,7 @@ section {
     justify-self: center;
     font-size: 1rem;
     text-transform: capitalize;
+    padding: 0;
 }
 
 /* Announcement */
@@ -249,6 +249,9 @@ section {
 section > .section-cont:first-child {
     grid-area: a;
     background-color: var(--white1);
+
+    display: grid;
+    grid-template-rows: 0.5fr repeat(3, 1fr 0.1fr) 1fr;
 }
 
 .announcement-row {
@@ -272,15 +275,14 @@ section > .section-cont:first-child {
     grid-area: b;
     text-align: justify;
     text-justify: inter-word;
-    max-width: 30ch;
 }
 
 .section-cont > hr {
     border: 0;
     border-top: 1.5px solid var(--black3);
     width: 95%;
-    justify-self: center;
     height: 0;
+    justify-self: center;
 }
 /* .announcement-row:nth-child(n + 1):nth-child(-n + 4) {
     border-bottom: 1px solid var(--black1);
@@ -290,6 +292,7 @@ section > .section-cont:first-child {
 section > .section-cont:last-child {
     grid-area: b;
     background-color: var(--white1);
+    display: grid;
 }
 
 .trending-row {
