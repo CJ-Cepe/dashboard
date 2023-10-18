@@ -360,9 +360,9 @@ section > .section-cont:last-child {
     padding: 10%;
 
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 'a' 'b' 'c' 'd';
+    grid-template-rows: 1fr 3fr 1fr 1fr;
     position: relative;
-    transition: top ease 0.5s;
 }
 
 .card:hover {
@@ -372,4 +372,27 @@ section > .section-cont:last-child {
     box-shadow: -21px 22px 0px 0px var(--purple1);
     -webkit-box-shadow: -21px 22px 0px 0px var(--purple1);
     -moz-box-shadow: -21px 22px 0px 0px var(--purple1);
+}
+
+.card > h1 {
+    grid-area: a;
+}
+
+.card > p {
+    grid-area: b;
+}
+
+.card > .icon-cont {
+    grid-area: d;
+    justify-self: end;
+}
+
+.card > .icon-cont img {
+    width: 1.5rem;
+    margin-left: 1rem;
+}
+
+.card > .icon-cont img:hover {
+    filter: invert(38%) sepia(21%) saturate(4155%) hue-rotate(220deg)
+        brightness(102%) contrast(99%);
 }
