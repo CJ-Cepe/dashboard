@@ -220,9 +220,6 @@ main > section:first-child {
 
 main > section:last-child {
     background: var(--white1);
-}
-
-section {
     display: grid;
     grid-template-areas: 'a' 'b';
     grid-template-columns: 1fr;
@@ -327,34 +324,31 @@ section > .section-cont:last-child {
 }
 
 /*-------------------*/
-.main-section {
-    display: grid;
-    grid-template-rows: 0.2fr 1fr;
-}
-
 .cards-cont {
-    max-height: 60vh;
-    /* border: 1px solid; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
-    gap: 2rem 3rem;
+    grid-auto-rows: 1fr;
 
+    /*     
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+    */
 }
 
 .cards-cont::-webkit-scrollbar {
     /* WebKit */
+    /*
     width: 0;
-    height: 0;
+    height: 0;  
+    */
 }
 
 .card {
     font-size: 1rem;
     border: 1px solid var(--black2);
     background-color: var(--white2);
+
     height: 18vw;
     width: 25vw;
     padding: 10%;
