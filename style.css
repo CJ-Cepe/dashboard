@@ -21,6 +21,7 @@ html {
     --white2: #fff;
     --purple1: #6864fe;
     --purple2: #4d46b2;
+    --gray1: #848689;
 }
 
 /*--- main styling ---*/
@@ -347,18 +348,21 @@ section > .section-cont:last-child {
     grid-column: 1 / 3;
     font-family: 'Inter', Helvetica, sans-serif, Arial;
     font-size: 1rem;
+    margin-bottom: -1rem;
 }
 
 .cards-cont span:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     font-style: italic;
+    color: var(--gray1);
 }
 
 .cards-cont span:nth-child(3) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     justify-self: end;
+    color: var(--gray1);
 }
 
 .cards-cont .card:nth-child(odd) {
