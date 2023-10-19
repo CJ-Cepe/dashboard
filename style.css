@@ -22,6 +22,9 @@ html {
     --purple1: #6864fe;
     --purple2: #4d46b2;
     --gray1: #848689;
+    --green1: #a1d96c;
+    --yellow1: #f2c261;
+    --red1: #ff563b;
 }
 
 /*--- main styling ---*/
@@ -386,6 +389,18 @@ section > .section-cont:last-child {
     grid-template-areas: 'a' 'b' 'c' 'd';
     grid-template-rows: 1fr 3fr 1fr 1fr;
     position: relative;
+}
+
+.card.completed {
+    background: linear-gradient(-135deg, var(--green1) 35px, var(--white2) 0);
+}
+
+.card.ongoing {
+    background: linear-gradient(-135deg, var(--yellow1) 35px, var(--white2) 0);
+}
+
+.card.pending {
+    background: linear-gradient(-135deg, var(--red1) 35px, var(--white2) 0);
 }
 
 .card:hover {
