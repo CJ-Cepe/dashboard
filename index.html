@@ -102,7 +102,16 @@
         <main>
             <section class="cards-cont">
                 <h1>Your Projects</h1>
-                <span>Sort: alphabetical | descending</span>
+                <span
+                    >Sort:
+                    <select name="sorting-type">
+                        <option value="alpha" selected>alphabetical</option>
+                        <option value="date">Date</option>
+                        <option value="stat">Status</option>
+                        <option value="ran">Random</option>
+                    </select>
+                    | descending</span
+                >
                 <span
                     ><a href="#">New</a> | <a href="#">Upload</a> |
                     <a href="#">Share</a>

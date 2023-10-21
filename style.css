@@ -361,6 +361,19 @@ section > .section-cont:last-child {
     color: var(--gray1);
 }
 
+.cards-cont span:nth-child(2) select {
+    color: var(--gray1);
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.cards-cont span:nth-child(2) select:hover {
+    outline: 1px solid var(--gray1);
+}
+
 .cards-cont span:nth-child(3) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
