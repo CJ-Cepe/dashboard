@@ -368,6 +368,15 @@ section > .section-cont:last-child {
     color: var(--gray1);
 }
 
+.cards-cont span:nth-child(3) a {
+    text-decoration: none;
+    color: var(--gray1);
+}
+
+.cards-cont span:nth-child(3) a:hover {
+    text-decoration: underline;
+}
+
 .cards-cont .card:nth-child(odd) {
     justify-self: center;
 }
